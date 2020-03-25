@@ -1,10 +1,11 @@
 
 button {
     padding: 8px 15px;
-    background-color: blue;
+    background-color: #0099ff;
     border: none;
     border-radius: 3px;
     color: white;
+    margin: auto;
 }
 
 input {
@@ -12,16 +13,25 @@ input {
     padding: 8px 15px;
     background-color: #e4e2e4;
     border: none;
-    color: black;
+    color: black;.selector:after {
+        content: '>';
+        color: #333;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+        right: 11px;
+        padding: 0 0 2px;
+        position: absolute;
+        pointer-events: none;
+      }
+    
+      select::-ms-expand {
+        display: none;
+    }
     box-shadow: 0px 4px 5px 0px rgba(153,153,153,1);
 }
 
-select {
-    width: 100%;
-    border: none;
-    padding: 5px;
-    background-color: #fefcfe;
-}
 
 table {
     width: 100%;
@@ -30,7 +40,7 @@ table {
     border-collapse: collapse;
     text-align: center;
     border-spacing: 3px;
-    border-left: 3px solid blue;
+    border-left: 3px solid #0099ff;
 }
 
 
@@ -57,6 +67,10 @@ td {
     background-color: seagreen;
 }
 
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
 .heading {
     background-color: #e8e6e8;
     padding: 10px;
@@ -71,6 +85,13 @@ td {
     background-color: #f4f2f4;
 }
 
+.left-heading {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2em;
+    margin: 15px;
+    padding: 5px 15px;
+}
+
 .right {
     display: inline-block;
     position: relative;
@@ -81,11 +102,6 @@ td {
     background-color: #f4f2f4;
 }
 
-.selector {
-    width: 80%;
-    margin: auto;
-    margin: 20px;
-}
 
 .table-container {
     display: table;
@@ -104,9 +120,47 @@ td {
     box-shadow: 0px 9px 35px 5px rgba(153,153,153,1);
 }
 
-
 .wrapper {
     display: inline-flex;
     background-color: #f4f2f4;
     width: 100%;
 }
+
+
+.selector {
+    margin: 15px;
+    position: relative;
+    padding: 15px;
+  }
+  
+  select::-ms-expand {
+       display: none;
+  }
+  
+  .selector:after {
+    content: '>';
+    color: #333;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 25px;
+    padding: 0 0 2px;
+    position: absolute;
+    pointer-events: none;
+  }
+  
+  .selector select {
+    width: 100%;
+    border: none;
+    padding: 5px;
+    background-color: #fefcfe;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 100%;
+    float: right;
+    color: #333;
+   
+  }
