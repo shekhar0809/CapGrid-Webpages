@@ -4,11 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"><link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <title>Document</title>
+
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function toggleDropdown(value) {
+            document.getElementById(value.toString()).classList.toggle("show");
+        }
+
+    </script>
+
 </head>
 
 <body>
@@ -45,71 +56,90 @@
                     Filters:
                 </div>
 
-                <div class="selector">
-                    <div class="label-selector">
-                        Product Segment
+                <div class="dropdown">
+                    <button onclick="toggleDropdown('dropdown1')" class="dropbtn">Dropdown</button>
+                    <div id="dropdown1" class="dropdown-content">
+
+                        <div class="dropdown-cell">
+                            <span class="filterName"> name </span>
+                            <span class="checkbox-container"> <input type="checkbox" name="" id=""> </span>
+                        </div>
+
+                        <div class="dropdown-cell">
+                            <span class="filterName"> name </span>
+                            <span class="checkbox-container"> <input type="checkbox" name="" id=""> </span>
+                        </div>
+
+                        <div class="dropdown-cell">
+                            <span class="filterName"> name </span>
+                            <span class="checkbox-container"> <input type="checkbox" name="" id=""> </span>
+                        </div>
+
+                        <div class="dropdown-cell">
+                            <span class="filterName"> name </span>
+                            <span class="checkbox-container"> <input type="checkbox" name="" id=""> </span>
+                        </div>
+
                     </div>
-                    <select id="filter1" name="filter">
-                        <option value="1">option 1</option>
-                        <option value="2">option 2</option>
-                        <option value="3">option 3</option>
-                    </select>
                 </div>
 
-                <div class="selector">
-                    <div class="label-selector">
-                        Product Segment
+                <div class="dropdown">
+                    <button onclick="toggleDropdown('dropdown2')" class="dropbtn">Dropdown</button>
+                    <div id="dropdown2" class="dropdown-content">
+
+                        <div class="dropdown-cell">
+                            <span class="filterName"> name </span>
+                            <span class="checkbox-container"> <input type="checkbox" name="" id=""> </span>
+                        </div>
+
+                        <div class="dropdown-cell">
+                            <span class="filterName"> name </span>
+                            <span class="checkbox-container"> <input type="checkbox" name="" id=""> </span>
+                        </div>
+
+                        <div class="dropdown-cell">
+                            <span class="filterName"> name </span>
+                            <span class="checkbox-container"> <input type="checkbox" name="" id=""> </span>
+                        </div>
+
+                        <div class="dropdown-cell">
+                            <span class="filterName"> name </span>
+                            <span class="checkbox-container"> <input type="checkbox" name="" id=""> </span>
+                        </div>
+
                     </div>
-                    <select id="filter2" name="filter">
-                        <option value="1">option 1</option>
-                        <option value="2">option 2</option>
-                        <option value="3">option 3</option>
-                    </select>
                 </div>
 
-                <div class="selector">
-                    <div class="label-selector">
-                        Product Segment
+
+                <div class="dropdown">
+                    <button onclick="toggleDropdown('dropdown3')" class="dropbtn">Dropdown</button>
+                    <div id="dropdown3" class="dropdown-content">
+
+                        <div class="dropdown-cell">
+                            <span class="filterName"> name </span>
+                            <span class="checkbox-container"> <input type="checkbox" name="" id=""> </span>
+                        </div>
+
+                        <div class="dropdown-cell">
+                            <span class="filterName"> name </span>
+                            <span class="checkbox-container"> <input type="checkbox" name="" id=""> </span>
+                        </div>
+
+                        <div class="dropdown-cell">
+                            <span class="filterName"> name </span>
+                            <span class="checkbox-container"> <input type="checkbox" name="" id=""> </span>
+                        </div>
+
+                        <div class="dropdown-cell">
+                            <span class="filterName"> name </span>
+                            <span class="checkbox-container"> <input type="checkbox" name="" id=""> </span>
+                        </div>
+
                     </div>
-                    <select id="filter3" name="filter">
-                        <option value="1">option 1</option>
-                        <option value="2">option 2</option>
-                        <option value="3">option 3</option>
-                    </select>
                 </div>
 
-                <div class="selector">
-                    <div class="label-selector">
-                        Product Segment
-                    </div>
-                    <select id="filter4" name="filter">
-                        <option value="1">option 1</option>
-                        <option value="2">option 2</option>
-                        <option value="3">option 3</option>
-                    </select>
-                </div>
 
-                <div class="selector">
-                    <div class="label-selector">
-                        Product Segment
-                    </div>
-                    <select id="filter5" name="filter">
-                        <option value="1">option 1</option>
-                        <option value="2">option 2</option>
-                        <option value="3">option 3</option>
-                    </select>
-                </div>
 
-                <div class="selector">
-                    <div class="label-selector">
-                        Product Segment
-                    </div>
-                    <select id="filter6" name="filter">
-                        <option value="1">option 1</option>
-                        <option value="2">option 2</option>
-                        <option value="3">option 3</option>
-                    </select>
-                </div>
 
             </div>
             <div class="right">
@@ -131,7 +161,7 @@
                         </tr>
 
                         <tr>
-                            <td>
+                            <td class="col-left">
                                 1
                             </td>
                             <td>
@@ -146,7 +176,7 @@
                         </tr>
 
                         <tr>
-                            <td>
+                            <td class="col-left">
                                 2
                             </td>
                             <td>
@@ -161,7 +191,7 @@
                         </tr>
 
                         <tr>
-                            <td>
+                            <td class="col-left">
                                 3
                             </td>
                             <td>
@@ -176,7 +206,7 @@
                         </tr>
 
                         <tr>
-                            <td>
+                            <td class="col-left">
                                 4
                             </td>
                             <td>
@@ -190,22 +220,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>
-                                4
-                            </td>
-                            <td>
-
-                            </td>
-                            <td>
-
-                            </td>
-                            <td>
-
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
+                            <td class="col-left">
                                 4
                             </td>
                             <td>
@@ -220,7 +235,7 @@
                         </tr>
 
                         <tr>
-                            <td>
+                            <td class="col-left">
                                 4
                             </td>
                             <td>
@@ -235,7 +250,22 @@
                         </tr>
 
                         <tr>
+                            <td class="col-left">
+                                4
+                            </td>
                             <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="col-left">
                                 4
                             </td>
                             <td>

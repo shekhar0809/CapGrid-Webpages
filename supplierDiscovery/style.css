@@ -13,23 +13,9 @@ input {
     padding: 8px 15px;
     background-color: #e4e2e4;
     border: none;
-    color: black;.selector:after {
-        content: '>';
-        color: #333;
-        -webkit-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        transform: rotate(90deg);
-        right: 11px;
-        padding: 0 0 2px;
-        position: absolute;
-        pointer-events: none;
-      }
-    
-      select::-ms-expand {
-        display: none;
-    }
+    color: black;
     box-shadow: 0px 4px 5px 0px rgba(153,153,153,1);
+
 }
 
 
@@ -37,13 +23,11 @@ table {
     width: 100%;
     margin: auto;
     table-layout: fixed;
-    border-collapse: collapse;
+    border-collapse: separate;
     text-align: center;
     border-spacing: 3px;
-    border-left: 3px solid #0099ff;
+    /* border: 3px solid #0099ff; */
 }
-
-
 
 tr {
     padding: 20px;
@@ -55,18 +39,75 @@ th {
 }
 
 td {
-    padding: 30px 40px;;
+    padding: 30px 40px;
+
+}
+
+tr:hover > .col-left {
+    border-left: 3px solid #0099ff;
 }
 
 .box {
     margin: 5px;
 }
 
-
 .container {
     background-color: seagreen;
 }
 
+
+.dropbtn {
+    border: none;
+    cursor: pointer;
+    margin: auto;
+    /* position: relative; */
+    width: 80%;
+    padding: 5px;
+    background-color: #fefcfe;
+    display: block;
+    color: #333;
+    font-size: 16px;
+
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #e5e3e5;
+  }
+  
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    /* background-color: lightcoral; */
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    /* background-color: purple; */
+    overflow: auto;
+    /* border: 1px solid #ddd; */
+    z-index: 1;
+    margin: auto;
+    position: relative;
+    width: 80%;
+    padding: 5px;
+  }
+  
+
+  .dropdown-content .dropdown-cell {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+  }
+
+  .dropdown .dropdown-cell:hover {
+      background-color: #e5e3e5;
+}
 .font-roboto {
     font-family: 'Roboto', sans-serif;
 }
@@ -78,11 +119,11 @@ td {
     font-weight: bold;
 }
 
-
 .left {
     display: inline-block;
     width: 25vw;
     background-color: #f4f2f4;
+    /* background-color: lawngreen; */
 }
 
 .left-heading {
@@ -96,18 +137,62 @@ td {
     display: inline-block;
     position: relative;
     padding: 10px;
-    /* margin: auto;; */
     max-width: 80vw;
     width: 100%;
     background-color: #f4f2f4;
 }
 
 
-.table-container {
-    display: table;
+.selector {
     margin: 15px;
+    position: relative;
+    padding: 15px;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.selector:after {
+    content: '>';
+    color: #333;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 25px;
+    padding: 0 0 2px;
+    position: absolute;
+    pointer-events: none;
+}
+
+.selector select {
+    width: 100%;
+    border: none;
+    padding: 5px;
+    background-color: #fefcfe;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 100%;
+    float: right;
+    color: #333;
+
+}
+
+
+  
+.show {display: block;}
+
+
+.table-container {
+    display: fixed;
+    margin: 15px;
+    max-height: 70vh;
     background-color: white;
     box-shadow: 3px 5px 36px 0px #555;
+    overflow-y: scroll;
 }
 
 .top { 
@@ -126,41 +211,3 @@ td {
     width: 100%;
 }
 
-
-.selector {
-    margin: 15px;
-    position: relative;
-    padding: 15px;
-  }
-  
-  select::-ms-expand {
-       display: none;
-  }
-  
-  .selector:after {
-    content: '>';
-    color: #333;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-    right: 25px;
-    padding: 0 0 2px;
-    position: absolute;
-    pointer-events: none;
-  }
-  
-  .selector select {
-    width: 100%;
-    border: none;
-    padding: 5px;
-    background-color: #fefcfe;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    display: block;
-    width: 100%;
-    float: right;
-    color: #333;
-   
-  }
