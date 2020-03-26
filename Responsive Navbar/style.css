@@ -7,48 +7,7 @@ body{
   font-family: montserrat;
   background-color: #F3F4F4;
 }
-nav{
-  background: #F3F4F4;
-  height: 55px;
-  width: 100%;
-  padding: 10px;
-  padding-bottom: 25px;
-    border-bottom: 1px solid #DBDFDF;
-}
 
-nav ul{
-  float: right;
-  margin-right: 20px;
-}
-nav ul li{
-  display: inline-block;
-  line-height:50px;
-  margin: 0 5px;
-}
-nav ul li a{
-  color: #3CD1B1;
-  font-size: 17px;
-  padding: 7px 13px;
-  border-radius: 3px;
-}
-a.active,a:hover{
-  background: #0097A9;
-  transition: .5s;
-}
-.link-3 {
-  transition: 0.4s;
-  font-family: 'Baloo 2';
-  color: #0097A9;
-  font-size: 20px;
-  text-decoration: none;
-  padding: 0 10px;
-  margin: 0 10px;
-}
-.link-3:hover {
-  background-color: #0097A9;
-  color: #F3F4F4;
-  padding: 27px 09px 9px 9px;
-}
 .first{
   padding: 30px 70px;
   color: #ACACAC;
@@ -133,11 +92,7 @@ a.active,a:hover{
   padding-right: 2px;
   margin-right: 2px;
 }
-.fa{
-  padding-right: 2px;
-  margin-right: 3px;
-    box-shadow: 0px 0px 1px #D2D2D2;
-}
+
 .h5
 {
   font-family: 'Noto Sans';
