@@ -37,6 +37,7 @@ a.active,a:hover{
 }
 .link-3 {
   transition: 0.4s;
+  font-family: 'Baloo 2';
   color: #0097A9;
   font-size: 20px;
   text-decoration: none;
@@ -87,10 +88,13 @@ a.active,a:hover{
     border-radius: 9px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
+    opacity: 0.6;
 }
 .sec
 {
   display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
    justify-content: center;
    top:calc(50% - 100px);
    padding-top: 230px;
@@ -117,4 +121,24 @@ a.active,a:hover{
 {
   text-decoration: underline;
   text-decoration-thickness: 0.2px;
+}
+.icon{
+  position: absolute;
+  display:inline-block;
+  top: 49%;
+  left: 23%;
+  color:#0097A9;
+  opacity: 0.8;
+  size: 5px;
+  padding-right: 2px;
+  margin-right: 2px;
+}
+.fa{
+  padding-right: 2px;
+  margin-right: 3px;
+    box-shadow: 0px 0px 1px #D2D2D2;
+}
+.h5
+{
+  font-family: 'Noto Sans';
 }
