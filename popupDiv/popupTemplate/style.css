@@ -1,0 +1,33 @@
+.container {
+
+    /* change max heigth and width 
+    to limit popup sizes */
+
+    max-width: 100vw;
+    max-height: 100vh;
+    height: auto;
+    width: auto;
+    margin: auto;
+    background-color: brown;
+}
+
+.wrapper {
+    height: 80vh;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+}
+
+.left-vertical-nav {
+    display: inline-block;
+    height: 100%;
+    width: 25vw;
+    background-color: chartreuse;
+}
+
+.right-content-container {
+    display: inline-block;
+    height: 100%;
+    width: 60vw;
+    background-color: blueviolet;
+}

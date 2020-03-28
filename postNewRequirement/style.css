@@ -1,0 +1,153 @@
+body {
+    background-color: #f4f2f4;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+.basic-item1 { grid-area: top1; }
+.basic-item2 { grid-area: top2; }
+.basic-item3 { grid-area: top3; }
+.basic-item4 { grid-area: bottom1; }
+.basic-item5 { grid-area: bottom2; }
+.basic-item6 { grid-area: bottom3; }
+
+.btn-container > button {
+    padding: 10px 70px;
+
+}
+
+
+.btn-container {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+button {
+    position: relative;
+    margin: auto;
+    padding: 8px 15px;
+    background-color: #0099ff;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    margin: auto;
+}
+
+.card {
+    width: 92%;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 3px 5px 36px 0px #dbd8db;
+
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.container {
+    height: auto;
+    width: auto;
+    background-color: #f4f2f4;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+
+.card-content-adv {
+    display: none;
+    overflow: auto;
+    z-index: 1;
+    padding: 15px;
+    position: relative;
+    z-index: 1;
+
+}
+
+.dropbtn {
+    background-color: #e4e2e4;
+    border: 1px solid #f4f2f4;
+    color: black;
+}
+
+.dropdown {
+    display: block;
+    position: relative;
+}
+
+
+.findmore-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.findmore-btn {
+    padding: 0 100px 0 20px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'top1 top2 top3'
+      'bottom1 bottom2 bottom3';
+  }
+
+
+hr {
+    /* border: none; */
+    border-top: 1px solid #f4f2f4;
+}
+
+.heading {
+    padding: 20px;
+    background-color: white;
+}
+
+input {
+    padding: 9px ;
+    background-color: #e4e2e4;
+    border: none;
+    color: black;
+    box-shadow: 0px 4px 5px 0px rgba(153,153,153,1);
+}
+
+.isHeading {
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+
+.isSubheading {
+    font-size: 1.2rem;
+
+}
+
+.page-title {
+    padding: 20px;
+    background-color: #f4f2f4;
+}
+
+
+.wrapper {
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+
+/* these are special - dont move  */
+
+.show {display: block;}
+
+.hide { display: none; }
+

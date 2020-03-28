@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <title>post new req</title>
+
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function toggleDropdown() {
+            console.log("click")
+            document.getElementById("advanceDropDown").classList.toggle("show");
+            document.getElementById("findMore").classList.toggle("hide");
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="page-title isHeading">
+            Post New Requirement
+        </div>
+        <div class="wrapper">
+
+            <div class="heading isHeading">
+                Select Your Requirements
+            </div>
+
+            <div class="card">
+                <div class="card-heading isSubheading">
+                    Create Demand
+                </div>
+                <hr>
+                <div class="card-content">
+                    <div class="label">
+                        Demand Name
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="" id="" placeholder="eg: abc search">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="card-heading isSubheading">
+                    Basic Search
+                </div>
+                <hr>
+                <div class="card-content">
+                    <div class="grid-container">
+                        <div class="basic-item1">Part Description</div>
+                        <div class="basic-item2">Process</div>
+                        <div class="basic-item3">Supplier Region</div>
+                        <div class="basic-item4"><input type="text" name="" id="" placeholder="eg: abc search"></div>
+                        <div class="basic-item5"><input type="text" name="" id="" placeholder="eg: abc search"></div>
+                        <div class="basic-item6"><input type="text" name="" id="" placeholder="eg: abc search"></div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="card-heading isSubheading">
+                    Advanced Search
+                </div>
+
+
+                <hr>
+
+                <div class="dropdown">
+                    <div id="findMore" class="findmore-wrapper">
+                        <div class="findmore">
+                            Advanced Search Text
+                        </div>
+                        <div class="findmore-btn">
+                            <button onclick="toggleDropdown()" class="dropbtn">Find More &#8910; </button>
+                        </div>
+                    </div>
+
+                    <div id="advanceDropDown" class="card-content-adv">
+
+                        <div class="grid-container">
+                            <div class="basic-item1">Material</div>
+                            <div class="basic-item2">Supplier Turnover</div>
+                            <div class="basic-item3">Quality Category</div>
+                            <div class="basic-item4"><input type="text" name="" id="" placeholder="eg: abc search">
+                            </div>
+                            <div class="basic-item5"><input type="text" name="" id="" placeholder="eg: abc search">
+                            </div>
+                            <div class="basic-item6"><input type="text" name="" id="" placeholder="eg: abc search">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="btn-container">
+                <button type="submit">Generate Supplier List</button>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
