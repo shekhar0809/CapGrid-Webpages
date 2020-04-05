@@ -202,3 +202,14 @@ tr:hover > .col-left {
     font-size: 0.9rem;
     color: #999;
 }
+
+
+
+.stage-text {
+    /* display: inline-block; */
+    position: relative;
+    margin: auto;
+    bottom: 30%;
+    background-color: palevioletred;
+
+}

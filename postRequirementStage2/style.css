@@ -63,7 +63,7 @@ button {
     width: fit-content;
 }
 
-.right > button  , .left > button {
+.right > button   {
     margin-left: 10px;
 }
 
@@ -210,4 +210,14 @@ tr:hover > .col-left {
 .upper {
     font-size: 0.9rem;
     color: #999;
+}
+
+
+.stage-text {
+    /* display: inline-block; */
+    position: relative;
+    margin: auto;
+    bottom: 30%;
+    background-color: palevioletred;
+
 }
