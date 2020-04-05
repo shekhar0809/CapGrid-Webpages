@@ -1,4 +1,6 @@
 
+
+
 .basic-item1 { grid-area: top1; }
 .basic-item2 { grid-area: top2; }
 .basic-item3 { grid-area: top3; }
@@ -17,6 +19,8 @@
 
 body {
     background-color: #f4f2f4;
+    max-height: 100vh;
+    padding: 0;
 }
 
 .box {
@@ -156,6 +160,7 @@ table {
     text-align: center;
     border-spacing: 3px;
     /* border: 3px solid #0099ff; */
+
 }
 
 tr {
@@ -180,6 +185,9 @@ tr:hover > .col-left {
 .table-wrapper {
     margin: 10px 5px;
     box-shadow: 0px 9px 35px 5px rgba(153,153,153,1);
+    max-height: calc(45vh - 20px) ;
+    overflow-y: scroll;
+
 }
 
 
