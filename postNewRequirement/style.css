@@ -3,13 +3,13 @@ body {
     font-family: 'Noto Sans JP', sans-serif;
 }
 
-
+/* 
 .basic-item1 { grid-area: top1; }
 .basic-item2 { grid-area: top2; }
 .basic-item3 { grid-area: top3; }
 .basic-item4 { grid-area: bottom1; }
 .basic-item5 { grid-area: bottom2; }
-.basic-item6 { grid-area: bottom3; }
+.basic-item6 { grid-area: bottom3; } */
 
 .btn-container > button {
     padding: 10px 70px;
@@ -49,6 +49,10 @@ button {
 
 .card-content {
     padding: 15px;
+}
+
+.column {
+    /* display: inline-flex; */
 }
 
 .container {
@@ -94,10 +98,11 @@ button {
 
 
 .grid-container {
-    display: grid;
-    grid-template-areas:
+    display: flex;
+    justify-content: space-around;
+    /* grid-template-areas:
       'top1 top2 top3'
-      'bottom1 bottom2 bottom3';
+      'bottom1 bottom2 bottom3'; */
   }
 
 

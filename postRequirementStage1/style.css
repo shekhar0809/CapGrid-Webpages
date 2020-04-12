@@ -1,22 +1,4 @@
 
-
-
-.basic-item1 { grid-area: top1; }
-.basic-item2 { grid-area: top2; }
-.basic-item3 { grid-area: top3; }
-.basic-item4 { grid-area: top4; }
-.basic-item5 { grid-area: top5; }
-.basic-item6 { grid-area: top6; }
-
-.basic-item7 { grid-area: bottom1; }
-.basic-item8 { grid-area: bottom2; }
-.basic-item9 { grid-area: bottom3; }
-.basic-item10 { grid-area: bottom4; }
-.basic-item11 { grid-area: bottom5; }
-.basic-item12 { grid-area: bottom6; }
-
-.basic-item13 { grid-area: right1; }
-
 body {
     background-color: #f4f2f4;
     max-height: 100vh;
@@ -73,10 +55,9 @@ hr {
 
 
 .grid-container {
-    display: grid;
-    grid-template-areas:
-      'top1 top2 top3 top4 top5 top6 right1'
-      'bottom1 bottom2 bottom3 bottom4 bottom5 bottom6 right1';
+    display: flex;
+    justify-content: space-evenly;
+  
 }
 
 
