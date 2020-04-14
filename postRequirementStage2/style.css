@@ -145,31 +145,31 @@ img {
     background-color: #f4f2f4;
 }
 
-table {
-    width: 100%;
-    margin: auto;
-    table-layout: fixed;
-    border-collapse: separate;
-    text-align: center;
-    border-spacing: 3px;
-    /* border: 3px solid #0099ff; */
+
+
+.row {
+    padding: 15px;
+    box-shadow: 0px 2px #999;
+    display: flex;
+    justify-content: space-around;
 }
 
-tr {
-    padding: 15px;
+
+.item {
+    padding: 30px 40px;
+
+}
+
+#table-heading {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    padding: 7px;
     box-shadow: 0px 2px #ccc;
 }
 
-th {
-    padding: 15px;;
-}
 
-td {
-    padding: 20px 30px;
-
-}
-
-tr:hover > .col-left {
+.row:hover  {
     border-left: 3px solid #0099ff;
 }
 

@@ -85,6 +85,8 @@ img {
     background-color: #f4f2f4;
 }
 
+
+
 .stage {
     display: inline-block;
     width: 23%;
@@ -124,8 +126,9 @@ img {
 
 }
 
+
 .timeline-container {
-    padding: 20px 0;
+    padding: 10px 0;
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
@@ -133,32 +136,31 @@ img {
     background-color: #f4f2f4;
 }
 
-table {
-    width: 100%;
-    margin: auto;
-    table-layout: fixed;
-    border-collapse: separate;
-    text-align: center;
-    border-spacing: 3px;
-    /* border: 3px solid #0099ff; */
 
+
+.row {
+    padding: 15px;
+    box-shadow: 0px 2px #999;
+    display: flex;
+    justify-content: space-around;
 }
 
-tr {
-    padding: 20px;
-    box-shadow: 0px 2px #ccc;
-}
 
-th {
-    padding: 15px;;
-}
-
-td {
+.item {
     padding: 30px 40px;
 
 }
 
-tr:hover > .col-left {
+#table-heading {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    padding: 7px;
+    box-shadow: 0px 2px #ccc;
+}
+
+
+.row:hover  {
     border-left: 3px solid #0099ff;
 }
 
