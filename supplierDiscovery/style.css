@@ -8,6 +8,51 @@ button {
     margin: auto;
 }
 
+.box {
+    margin: 5px;
+}
+
+
+.card-popup {
+
+    width: 90%;
+    margin: auto;
+    padding: 20px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-bottom: 2%;
+
+}
+
+.cart-bar {
+    width: 100%;
+    display: inline-flex;
+    background-color: #e5e3e5;
+}
+
+.cart-btn {
+    display: inline-block;
+    right: 2%;
+}
+
+  /* The Close Button */
+  .close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+
+.container {
+    background-color: seagreen;
+}
+
 input {
     margin-left: 5px;
     padding: 8px 15px;
@@ -64,42 +109,15 @@ input[type="checkbox"]:checked + label:before {
 }
 
 
-table {
-    width: 100%;
-    margin: auto;
-    table-layout: fixed;
-    border-collapse: separate;
-    text-align: center;
-    border-spacing: 3px;
-    /* border: 3px solid #0099ff; */
-}
-
-tr {
-    padding: 20px;
-    box-shadow: 0px 2px #ccc;
-}
-
-th {
-    padding: 15px;;
-}
-
-td {
-    padding: 30px 40px;
+.item {
+    padding: 20px 30px;
 
 }
 
-tr:hover > .col-left {
+
+.row:hover  {
     border-left: 3px solid #0099ff;
 }
-
-.box {
-    margin: 5px;
-}
-
-.container {
-    background-color: seagreen;
-}
-
 
 .dropbtn {
     border: none;
@@ -114,44 +132,44 @@ tr:hover > .col-left {
     font-size: 16px;
   }
   
-  .dropbtn:hover, .dropbtn:focus {
-    background-color: #e5e3e5;
-  }
-  
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    /* background-color: lightcoral; */
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  
-  .dropdown-content {
-    display: none;
-    /* background-color: purple; */
-    overflow: auto;
-    /* border: 1px solid #ddd; */
-    z-index: 1;
-    margin: auto;
-    position: relative;
-    width: 80%;
-    padding: 5px;
-  }
-  
-
-  .dropdown-content .dropdown-cell {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-  }
-
-  .dropdown .dropdown-cell:hover {
-      background-color: #e5e3e5;
+.dropbtn:hover, .dropbtn:focus {
+background-color: #e5e3e5;
 }
+
+.dropdown {
+position: relative;
+display: inline-block;
+/* background-color: lightcoral; */
+width: 100%;
+margin-bottom: 20px;
+}
+
+.dropdown-content {
+display: none;
+/* background-color: purple; */
+overflow: auto;
+/* border: 1px solid #ddd; */
+z-index: 1;
+margin: auto;
+position: relative;
+width: 80%;
+padding: 5px;
+}
+
+
+.dropdown-content .dropdown-cell {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: flex;
+justify-content: space-between;
+background-color: white;
+}
+
+.dropdown .dropdown-cell:hover {
+    background-color: #e5e3e5;
+}
+
 .font-roboto {
     font-family: 'Roboto', sans-serif;
 }
@@ -177,6 +195,68 @@ tr:hover > .col-left {
     padding: 5px 15px;
 }
 
+
+
+.modal {
+    display: none; 
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    height: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+.modal-header {
+    padding: 2px 16px;
+    color: Blue;
+}
+  
+.modal-body {
+    padding: 10px 16px;
+}
+
+.m-header-content {
+    width: fit-content;
+    margin: auto;
+}
+
+
+.popup-footer {
+    display: block;
+    padding: 2px 16px;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    margin-top: auto;
+}
+
+.popup-footer > button {
+    display: flex;
+    width: 50%;
+    justify-content: center;    
+}
+
 .right {
     display: inline-block;
     position: relative;
@@ -184,6 +264,25 @@ tr:hover > .col-left {
     max-width: 80vw;
     width: 100%;
     background-color: #f4f2f4;
+}
+
+
+.row {
+    padding: 10px;
+    box-shadow: 0px 2px #999;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.sub-heading-pop {
+    width: 90%;
+    margin: auto;
+    padding: 20px 10px;
+    margin-bottom: 4%;
+    color: Blue;
+
 }
 
 
@@ -226,7 +325,13 @@ select::-ms-expand {
 }
 
 
-  
+#table-heading {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    padding: 7px;
+    box-shadow: 0px 2px #ccc;
+}
 
 
 .table-container {
@@ -247,41 +352,7 @@ select::-ms-expand {
     box-shadow: 0px 9px 35px 5px rgba(153,153,153,1);
 }
 
-.wrapper {
-    display: inline-flex;
-    background-color: #f4f2f4;
-    width: 100%;
-}
 
-.modal {
-    display: none; 
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content */
-  .modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    border: 1px solid #888;
-    width: 80%;
-    height: 80%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s
-  }
   
   /* Add Animation */
   @-webkit-keyframes animatetop {
@@ -294,80 +365,18 @@ select::-ms-expand {
     to {top:0; opacity:1}
   }
   
-  /* The Close Button */
-  .close {
-    color: black;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  .modal-header {
-    padding: 2px 16px;
-    color: Blue;
-  }
-  
-  .modal-body {padding: 10px 16px;}
-  
-  .popup-footer {
-    display: block;
-    padding: 2px 16px;
-    width: 100%;
-    position: absolute;
-    bottom: 20px;
-    margin-top: auto;
-  }
-
-  .popup-footer > button {
-      display: flex;
-      width: 50%;
-        justify-content: center;    
-    }
-
-.m-header-content {
-    width: fit-content;
-    margin: auto;
-}
 
 
-.sub-heading-pop {
-    width: 90%;
-    margin: auto;
-    padding: 20px 10px;
-    margin-bottom: 4%;
-    color: Blue;
 
-}
 
-.card-popup {
-
-    width: 90%;
-    margin: auto;
-    padding: 20px 10px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    margin-bottom: 2%;
-
-}
-
-.cart-bar {
-    width: 100%;
+.wrapper {
     display: inline-flex;
-    background-color: #e5e3e5;
+    background-color: #f4f2f4;
+    width: 100%;
 }
 
-.cart-btn {
-    display: inline-block;
-    right: 2%;
-}
 
-/* .hide { display: none; } */
+/* dont move */
 
 .show {display: block;}
 
